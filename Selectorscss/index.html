@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* THis is a element selector. It will select all div elements in the document. */
+        div{
+            /* background-color: red; */
+        }
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+        /* ID Selector */
+        #green{
+            background-color: green;
+        }
+        /* Child Selector */
+            div > p{
+                color: blue;
+                background-color: brown;
+            }
+            /* Descendant Selector */
+            div p{
+                color: blue;
+                background-color: brown;
+            }
+            /* Universal Selector */
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            /* Pseudo Class Selector */
+            a:visited{
+                color:pink
+            }
+            a:link{
+                color : orange
+            }
+            a:hover{
+                color: red;
+            }
+            p:first-child{
+                color: blue;
+            }
+
+            
+
+
+    </style>
+ 
+</head>
+<body>
+    <div class = "red">
+        I am a div element.
+        <article>
+            <p>
+                I am  a paragraph element inside a div element and an article element.
+            </p>
+        </article>
+    </div>
+    <div id = "green">
+        I am another div element.
+    </div>
+    
+    <a href = "https://www.facebook.com">Facebook</a>    
+    <a href = "https://www.instagram.com">Instagram</a>
+    <main class="One">
+        <p>
+            Iam first
+        </p>
+        <p>
+            I am second
+        </p>
+    </main>
+    <div class = "One">
+        I am One.
+
+
+    </div>
+
+</body>
+</html>
